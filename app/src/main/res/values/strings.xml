@@ -7,4 +7,5 @@
     <string name="upload">Upload</string>
     <string name="good_result">Benign</string>
     <string name="bad_result">Malignant</string>
+    <string name="desc">Mole</string>
 </resources>
