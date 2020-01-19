@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "426677404221",
+    "firebase_url": "https://rate-my-skin.firebaseio.com",
+    "project_id": "rate-my-skin",
+    "storage_bucket": "rate-my-skin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:426677404221:android:93d02136d5a209d5cee054",
+        "android_client_info": {
+          "package_name": "com.example.ratemyskin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "426677404221-9b3q0ufrbhij3k5gtqaa97u3cc7lvqrt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ratemyskin",
+            "certificate_hash": "41aa9162c381b3a117f8abbb305e207b8ef3e290"
+          }
+        },
+        {
+          "client_id": "426677404221-6ol0qf9e8sj50l1af90dnu7do95e1mmr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5-yNYigcf9q2kZJoV_WwwxC6B-EaOTrE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "426677404221-6ol0qf9e8sj50l1af90dnu7do95e1mmr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
