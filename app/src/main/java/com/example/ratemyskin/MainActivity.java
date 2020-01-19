@@ -98,6 +98,21 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    // pulls up camera display to take pic
+    private void dispatchCameraAction() {
+        Intent takePicture = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
+        if (takePicture.resolveActivity(getPackageManager()) != null) {
+            File photoFile = createPhotoFile();
+            if (photoFile != null) {
+                pathToFile = photoFile.getAbsolutePath();
+                Uri photoURI = FileProvider.getUriForFile(MainActivity.this, "com.example.ratemyskin.fileprovider", photoFile);
+                takePicture.putExtra(MediaStore.EXTRA_OUTPUT, photoURI);
+            }
+        }
+        Log.d("dispatchCameraAction", "here");
+        startActivityForResult(takePicture,1);
+    }
+
     // delete later
     // displays picture on main page once taken
     @Override
@@ -120,21 +135,6 @@ public class MainActivity extends AppCompatActivity {
             }
             openActivityUploadPicture();
         }
-    }
-
-    // pulls up camera display to take pic
-    private void dispatchCameraAction() {
-        Intent takePicture = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
-        if (takePicture.resolveActivity(getPackageManager()) != null) {
-            File photoFile = createPhotoFile();
-            if (photoFile != null) {
-                pathToFile = photoFile.getAbsolutePath();
-                Uri photoURI = FileProvider.getUriForFile(MainActivity.this, "com.example.ratemyskin.fileprovider", photoFile);
-                takePicture.putExtra(MediaStore.EXTRA_OUTPUT, photoURI);
-            }
-        }
-        Log.d("dispatchCameraAction", "here");
-        startActivityForResult(takePicture,1);
     }
 
     // saves picture to local database
