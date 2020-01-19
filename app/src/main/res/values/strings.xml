@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Rate My Skin</string>
+    <string name="welcome_string">Hello World!</string>
+    <string name="gallery">Upload Picture</string>
+    <string name="instructions">Choose an option</string>
+    <string name="camera">Camera</string>
+    <string name="upload">Upload</string>
+    <string name="good_result">Benign</string>
+    <string name="bad_result">Malignant</string>
 </resources>
